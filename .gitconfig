@@ -1,4 +1,4 @@
 [alias]
-oss = !git config user.name NegatioN && git config user.email joakimrishaug@gma$
-work = !git config user.name Joakim && git config user.email joakim.rishaug@fin$
+oss = !git config user.name NegatioN && git config user.email joakimrishaug@gmail.com
+work = !git config user.name Joakim && git config user.email joakim.rishaug@finn.no
 oc = !git clone $1 && cd $(basename $1 .git) && git oss
