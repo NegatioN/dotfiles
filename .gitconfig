@@ -3,3 +3,4 @@ oss = !git config user.name NegatioN && git config user.email joakimrishaug@gmai
 work = !git config user.name Joakim && git config user.email joakim.rishaug@finn.no
 oc = !git clone $1 && cd $(basename $1 .git) && git oss
 wc = !git clone $1 && cd $(basename $1 .git) && git work
+ml = !git log --author=joakim.rishaug@finn.no
