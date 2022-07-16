@@ -1,3 +1,5 @@
+" Use :help 'option' to see the documentation for the given option.
+
 " Vim is based on Vi. Setting `nocompatible` switches from the default
 " Vi-compatibility mode and enables useful Vim functionality. This
 " configuration option turns out not to be necessary for the file named
@@ -61,6 +63,12 @@ set list listchars=tab:»·,trail:·
 
 " have a history of vim commands in vim across sessions
 set viminfo=%,'50,\"100,:100,n~/.viminfo
+
+set complete-=i
+set smarttab
+set wildmenu
+set autoread
+set history=1000
 
 " Unbind some useless/annoying default key bindings.
 nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
