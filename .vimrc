@@ -55,9 +55,6 @@ set incsearch
 "command "y23dd you will see "y23dd before you type the last 'd' which completes the command 
 set sc
 
-"Automatic indentation. This automatically inserts the indentation from the current line when you start a new line
-set ai
-
 "display TAB-character as a trail.
 set list listchars=tab:»·,trail:·
 
@@ -72,6 +69,20 @@ set history=1000
 
 " Unbind some useless/annoying default key bindings.
 nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
+
+" Automatically have same path as current open file
+:set autochdir
+
+"Automatic indentation. This automatically inserts the indentation from the current line when you start a new line
+set ai
+
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
 
 " Disable audible bell because it's annoying.
 set noerrorbells visualbell t_vb=
